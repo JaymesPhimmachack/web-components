@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/form.css" type="text/css">
+  </head>
+
+  <body>
+
+<div class="header">
+        <nav>
+<ul>
+    <li><a href="../../index.html">Home</a></li>
+     <li><a href="../buttons/buttons.html">Buttons</a></li>
+    <li><a href="../sidebar/sidebar.html">Profile Sidebar</a></li>
+   <li class="dropdown">Form
+        <ul >
+            <li><a href="signup-form.html">Sign Up</a></li>
+            <li><a href="search-form.html">Search</a></li>
+            <li><a href="questionnaire.html">Questionnaire</a></li>
+            <li><a href="signin-form.html">Login</a></li>
+            <li><a href="color-building-form.html">Color Builder</a></li>
+            <li><a href="../forms/shipping-billing-form.html">Shipping/Billing</a></li>
+            <li><a href="scheduling-form.html">Scheduling</a></li>
+            <li><a href="credit-card-form.html">Credit/Debit</a></li>
+        </ul>
+    </li>  
+    <li><a href="../calculator/calculator.html">Calculator</a></li>
+    <li><a href="../product-listing/product-listing.html">Product Listing</a></li>
+</ul>
+</nav>
+</div>
+
+<section class="question" id="questionnaire">
+  <h1>Questionnaire</h1>  
+<form>
+
+<h3>Favorite Ice Cream: </h3> 
+
+
+<div class="ice-cream">
+
+
+ <label for="vanilla" class="option"><input  type="radio" id="vanilla" name="ice-cream" value="vanilla" >  Vanilla </label>
+  <label for="ice-cream" class="option"><input type="radio" id="strawberry" name="ice-cream" value="strawberry" >  Strawberry </label> 
+  <label for="ice-cream" class="option"><input  type="radio" id="coffee" name="ice-cream" value="coffee" >  Coffee </label>
+  <label for="ice-cream" class="option"><input type="radio" id="chocolate" name="ice-cream" value="chocolate" >  Chocolate </label> 
+  <label for="ice-cream" class="option"><input type="radio" id="other-ice-cream" name="ice-cream" value="null" >  Other <input  type="textbox" id="other-ice-cream-input" name="ice-cream-input" ></label>
+
+
+ 
+
+</div>
+
+
+<h3>Favorite Animal: </h3> 
+
+<div class="animal">
+ <label for="lions" class="option"><input  type="radio" id="lions" name="animal" value="lions" >  Lions </label>
+ <label for="animal" class="option"><input  type="radio" id="tigers" name="animal" value="tigers" >  Tigers </label>
+  <label for="animal" class="option"><input  type="radio" id="bears" name="animal" value="bears" >  Bears </label>
+ <label for="animal" class="option"><input  type="radio" id="elephants" name="animal" value="elephants" >  Elephants </label>
+  <label for="animal" class="option"><input  type="radio" id="other-animal" name="animal" value="null" >  Other <input  type="textbox" id="other-animal-input" name="animal-input" > </label>
+  
+</div>
+
+<input  type="submit" value="Submit">
+
+
+</form>
+</section>
+
+
+
+    <script src="../../js/formValidate.js"></script>
+
+  </body>
+
+</html>
+
+
+

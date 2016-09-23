@@ -1,0 +1,140 @@
+form {
+  width: 470px;
+  height: 470px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+
+
+label {
+  font-weight: bold;
+}
+
+
+.input-adjust {
+  width: 450px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+}
+
+
+
+
+input[type=submit] {
+  height: 50px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #00CCCC;
+ 
+}
+
+
+
+/* Scheduling Form */
+
+textarea {
+  width: 450px;
+  height: 100px;
+}
+
+.timezone {
+  margin: 10px 0;
+  width: 450px;
+}
+
+.scheduling {
+  width: 500px;
+  height: 650px;
+  border: 1px solid #99ffff;
+}
+
+
+/* Sign In Form */
+
+.link {
+  margin: 0 10px;
+}
+
+.log-in-state {
+  position: absolute;
+  top: 215px;
+  left: 12px;
+}
+
+#logged-in {
+  width: 30px;
+  
+}
+
+.sign-in {
+position: relative;
+}
+
+
+.sign-in input {
+margin: 10px;
+}
+
+/* Shipping and Billing Form */
+
+.billing {
+  width: 650px;
+  height: 1250px;
+  border: 1px solid #99ffff;
+  padding: 0;
+}
+
+.info {
+  margin: 10px 0;
+}
+
+
+
+label[for="billing-info"] {
+ display: block;
+ margin-bottom: 20px;
+}
+
+
+/* Credit Card Form */
+
+#csv {
+  width: 100px;
+  margin: 0 60px 20px 0;
+}
+
+.csv-info {
+  font-size: 12px;
+  line-height: 1.2em;
+  margin: 5px 0;
+}
+
+
+/* Questionnaire */
+
+
+
+.animal label, .ice-cream label {
+display: block;
+padding: 10px 5px;
+}
+
+
+.ice-cream, .animal {
+  margin: 10px 10px 25px 10px;
+  
+}
+
+.question h3 {
+margin: 0;
+}
+
+
+.question{
+ height: 650px;
+}
+
+

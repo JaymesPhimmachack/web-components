@@ -1,0 +1,26 @@
+
+
+body {
+	background: linear-gradient(to right, #b3d9ff, #0073e6);
+       color: #fff;
+}
+
+blockquote p {
+	margin: 5px;
+	
+}
+
+
+
+.container {
+	
+	height: 230px;
+        margin: 150px auto;
+	border-radius: 10px;
+        width: 550px;
+
+}
+
+h2, blockquote {
+	margin: 0 25px;
+}

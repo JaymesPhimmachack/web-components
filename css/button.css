@@ -1,0 +1,73 @@
+
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 10px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  background-color: #3399FF; 
+  font-size: 16px;
+  
+}
+
+.button:hover {
+  background-color: #0073e6;
+
+}
+
+
+.button:active {
+  color: #3399FF;
+  background-color: #ffffff;
+
+}
+
+
+.button-outline:focus {
+  outline:0;
+
+}
+
+.button-sm {
+ font-size: 10px;
+ width: 90px;
+ height: 30px; 
+ 
+}
+
+
+.button-md {
+  width: 150px;
+  height: 50px; 
+
+}
+
+
+.button-lg {
+   width: 250px;
+  height: 100px; 
+ }
+
+
+a{
+  text-decoration: none;
+  
+}
+
+section {
+  width: 600px;
+  padding: 10px;
+}
+
+h3 {
+margin: 10px 0;
+padding: 5px;
+border-radius: 5px;
+
+}

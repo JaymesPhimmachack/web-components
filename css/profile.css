@@ -1,0 +1,48 @@
+
+.sidebar {
+ font-size: 16px;
+ background-color: #9999ff;
+ width: 30%;
+ padding: 10px;
+ height: 1000px;
+ position: absolute;
+ top: 60px;
+ right: 0px;
+
+}
+
+.photo-lg {
+  width:  250px;
+  height: 250px;
+  float: left;
+}
+
+.photo-sm {
+  width:  125px;
+  height: 125px;
+  float: right;
+ 
+}
+
+.img-container {
+ width: 375px;
+ height: 250px;
+ overflow: hidden;
+}
+
+img {
+height: 100%;
+width: 100%;
+}
+
+
+p {
+ line-height: 1.5em; 
+
+}
+
+h3, h4 {
+  color: #4d4dff;
+
+}
+

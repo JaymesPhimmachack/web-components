@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/calculator.css" type="text/css">
+  </head>
+
+  <body>
+
+<div class="header">
+    <nav>
+<ul>
+    <li><a href="../../index.html">Home</a></li>
+     <li><a href="../buttons/buttons.html">Buttons</a></li>
+    <li><a href="../sidebar/sidebar.html">Profile Sidebar</a></li>
+   <li class="dropdown">Form
+        <ul >
+            <li><a href="../forms/signup-form.html">Sign Up</a></li>
+            <li><a href="../forms/search-form.html">Search</a></li>
+            <li><a href="../forms/questionnaire.html">Questionnaire</a></li>
+            <li><a href="../forms/signin-form.html">Login</a></li>
+            <li><a href="../forms/color-building-form.html">Color Builder</a></li>
+            <li><a href="../forms/shipping-billing-form.html">Shipping/Billing</a></li>
+            <li><a href="../forms/scheduling-form.html">Scheduling</a></li>
+            <li><a href="../forms/credit-card-form.html">Credit/Debit</a></li>
+        </ul>
+    </li>  
+    <li><a href="calculator.html">Calculator</a></li>
+    <li><a href="../product-listing/product-listing.html">Product Listing</a></li>
+</ul>
+</nav>
+</div>
+
+    <section class="cal">
+
+      <h1>Calculator</h1>
+
+      <div class="calc-container">
+
+        <input id="display" type="text" disabled="disabled">
+         <div class="btn-wrapper">
+        <div class="btn-color btn-clear" onclick="calc.eraseButton()">CLEAR</div>
+        <div class="btn-color" onclick="calc.delButton()">DEL</div>
+
+        <div class="btn" id="seven" onclick="calc.sevenButton()">7</div>
+        <div class="btn" id="eight" onclick="calc.eightButton()">8</div>
+        <div class="btn" id="nine" onclick="calc.nineButton()">9</div>
+        <div class="btn" id="plus" onclick="calc.plusButton()">+</div>
+
+        <div class="btn" id="four" onclick="calc.fourButton()">4</div>
+        <div class="btn" id="five" onclick="calc.fiveButton()">5</div>
+        <div class="btn" id="six" onclick="calc.sixButton()">6</div>
+        <div class="btn" id="minus" onclick="calc.minusButton()">-</div>
+
+        <div class="btn" id="one" onclick="calc.oneButton()">1</div>
+        <div class="btn" id="two" onclick="calc.twoButton()">2</div>
+        <div class="btn" id="three" onclick="calc.threeButton()">3</div>
+        <div class="btn" id="divide" onclick="calc.divideButton()">/</div>
+
+        <div class="btn" id="zero" onclick="calc.zeroButton()">0</div>
+        <div class="btn" id="dot" onclick="calc.dotButton()">.</div>
+        <div class="btn" onclick="calc.equalButton()">=</div>
+        <div class="btn" id="multiple" onclick="calc.multipleButton()">*</div>
+        </div>
+      </div>
+
+    </section>
+
+    <script src="../../js/calc.js"></script>
+
+  </body>
+
+</html>
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Shipping and Billing Information</title>
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../css/form.css" type="text/css">
+  </head>
+
+  <body>
+
+<div class="header">
+    <nav>
+<ul>
+    <li><a href="../../index.html">Home</a></li>
+     <li><a href="../buttons/buttons.html">Buttons</a></li>
+    <li><a href="../sidebar/sidebar.html">Profile Sidebar</a></li>
+   <li class="dropdown">Form
+        <ul >
+            <li><a href="signup-form.html">Sign Up</a></li>
+            <li><a href="search-form.html">Search</a></li>
+            <li><a href="questionnaire.html">Questionnaire</a></li>
+            <li><a href="signin-form.html">Login</a></li>
+            <li><a href="color-building-form.html">Color Builder</a></li>
+            <li><a href="../forms/shipping-billing-form.html">Shipping/Billing</a></li>
+            <li><a href="scheduling-form.html">Scheduling</a></li>
+            <li><a href="credit-card-form.html">Credit/Debit</a></li>
+        </ul>
+    </li>  
+    <li><a href="../calculator/calculator.html">Calculator</a></li>
+    <li><a href="../product-listing/product-listing.html">Product Listing</a></li>
+</ul>
+</nav>
+</div>
+
+ <section class="billing" id="ship-bill">
+<h1>Shipping and Billing Information</h1>
+
+<form>
+
+
+<fieldset class="info">
+<h1>Billing Information</h1>
+<label>First name:<input class="input-adjust" type="text" id="firstname1"></label>
+<label>Last name:<input class="input-adjust" type="text" id="lastname1"></label>
+<label>Address:<input class="input-adjust" type="text" id="address1"></label>
+<label>City:<input class="input-adjust" type="text" id="city1"></label>
+<label>Country:<input class="input-adjust" type="text" id="country1"></label>
+</fieldset>
+
+<fieldset class="info">
+<h1>Shipping Information</h1>
+<label for="billing-info"> <input type="checkbox" id="billing-info" name="billing-info"> Same as my billing address:</label> 
+<label>First name:<input class="input-adjust" type="text" id="firstname2"></label>
+<label>Last name:<input class="input-adjust" type="text" id="lastname2"></label>
+<label>Address:<input class="input-adjust" type="text" id="address2"></label>
+<label>City:<input class="input-adjust" type="text" id="city2"></label>
+<label>Country:<input class="input-adjust" type="text" id="country2"></label>
+</fieldset>
+
+<input class="input-adjust" type="submit" value="Submit">
+</form>
+
+
+</section>
+
+
+
+
+    <script src="../../js/formValidate.js"></script>
+
+  </body>
+
+</html>
