@@ -1,18 +1,16 @@
- (function(window){
+(function(window){
 
 
 var cartSystem = {};
 
 
-cartSystem.itemContainer = document.createElement("tr");
-cartSystem.cartBody = document.querySelector("#table_body");
+cartSystem.itemContainer = document.createElement("div");
 
+cartSystem.cartBody = document.querySelector(".cart-body");
 
 cartSystem.cart =  document.querySelector(".cart");
 
 cartSystem.cartParent = cartSystem.cart.parentNode;
-
-//cartSystem.cartItemQty = document.querySelectorAll(".cart-detail").length;
 
 cartSystem.grandTotal = document.getElementById("grand-total").innerHTML;
 
@@ -22,7 +20,10 @@ cartSystem.itemNum = 4;
 
 cartSystem.promoCode = ['5% off', '10% off', '15% off'];
 
- cartSystem.total = 0;
+cartSystem.total = 0;
+
+cartSystem.subtotal = 0;
+
 
 cartSystem.cartDatabase = {
   item1:{
@@ -62,9 +63,9 @@ var cart =  document.querySelector(".cart");
   
   
  // Get the id of the current item  
-var itemId = item.parentNode.parentNode.id;
+var itemId = cartItem.getAttribute("id");  
 
-  
+
  // Remove item when buttom click 
 this.cartBody.removeChild(cartItem);
 delete this.cartDatabase[itemId];
@@ -91,47 +92,43 @@ if(this.itemNum === 0){
 cartSystem.updateTotal = function(id, qty){
   
  var product = document.getElementById(id);  
-    
- var totalPrice;
+ 
   
   this.total = this.shipCost;
   
-
-// var idNum = 0; 
- 
-if(id){
-     this.cartDatabase[id].qty = qty;
+console.log(qty !== undefined);
+if(qty !== undefined){
+     this.cartDatabase[id].qty += qty;
      this.cartDatabase[id].total = qty * this.cartDatabase[id].price;
- 
+     product.childNodes[3].childNodes[1].value = qty;
   
 // Update cart item total 
   product.lastChild.previousSibling.innerHTML = "$" + this.cartDatabase[id].total.toFixed(2);
   
-  idNum = Number(id.slice(4));
   
-  // Update cart item qty
-  if(idNum > 4){
-    product.childNodes[3].value = qty;
- 
-  }else{
-        product.childNodes[3].childNodes[1].value = qty;         
-        
-                 }
                  
 
-} 
+} else {
+  // Update cart item total 
+  product.lastChild.previousSibling.innerHTML = "$" + this.cartDatabase[id].total.toFixed(2);
   
+  
+}
 
+  
   
 // Update total  
 for(var i in this.cartDatabase){
      
       this.total += this.cartDatabase[i].total;
-     
+      this.subtotal += this.cartDatabase[i].total;
 }
+
  
- 
-  // Output total
+  // Output subtotal
+  document.getElementById("subtotal").innerHTML = "$" + this.subtotal.toFixed(2);
+  
+   // Output total
   document.getElementById("grand-total").innerHTML = "$" + this.total.toFixed(2);
 
 
@@ -145,22 +142,19 @@ cartSystem.updateBySelect = function(item){
 var cartItem = item.parentNode.parentNode;
 
 
- //console.log(item);
-
  // Get the id of the current item  
-var itemId = item.parentNode.parentNode.id;  
+ var itemId = cartItem.getAttribute("id");  
   
 // Get the current item qty  
 var itemQty = Number(item.value);
   
-
-  
+ 
 // Remove cart after remove last item  
   
 if(this.itemNum === 1){
     this.cartParent.removeChild(this.cart);
  }  
- 
+// Remove item or update qty  
   else if(item.value === "0"){
    this.itemNum--;   
    this.cartBody.removeChild(cartItem);
@@ -172,7 +166,7 @@ this.updateTotal();
      this.cartDatabase[itemId].qty = itemQty;
     
  
-    this.updateTotal(itemId, itemQty); 
+    this.updateTotal( itemId , itemQty); 
   }
  
 };
@@ -181,23 +175,23 @@ this.updateTotal();
 
 cartSystem.addItem = function(item){
   
+var parent =  item.parentNode;
   
-var product = item.parentNode.parentNode.childNodes[3].innerHTML;  
-var qty =  Number(item.previousSibling.previousSibling.value);  
-var price = Number(item.previousSibling.previousSibling.previousSibling.previousSibling.innerHTML.slice(1));
+var product = parent.childNodes[3].innerHTML;   
   
+var qty = Number(parent.childNodes[10].value);  
 
-   
+var price = Number(parent.childNodes[7].firstChild.nextSibling.innerHTML);
+     
 var total = qty * price;  
-
+  
 var itemId;
   
 var itemExist = false; 
   
 var newItem;  
-  
-  
  
+  console.log(parent.childNodes[3].innerHTML);
 
 for(var i=1; i<= this.itemNum; i++){
 
@@ -212,55 +206,53 @@ for(var i=1; i<= this.itemNum; i++){
  // Update existing item or create new item in cart 
 if(itemExist){  
    
-   this.cartDatabase[itemId].qty += qty;
+   this.cartDatabase[itemId].qty = qty;
       this.cartDatabase[itemId].price = price;
       this.cartDatabase[itemId].total = Number(total.toFixed(2));  
-    
+ 
     this.updateTotal(itemId, qty); 
   
 }else{  
 
   
-var itemNode = document.createElement("tr");
+var itemNode = document.createElement("div");
   
- 
-
+  
     this.itemNum++;
   
   newItem = "item" + this.itemNum;
  
+  itemNode.setAttribute("class", "cart-detail");
+  itemNode.setAttribute("id", newItem);
   
- itemNode.setAttribute("class", "cart-detail");
- itemNode.setAttribute("id", newItem);
-  
- 
- 
-
+     
   this.cartDatabase[newItem] = {};
   
   this.cartDatabase[newItem].name = product;
-  this.cartDatabase[newItem].qty += qty;
+  this.cartDatabase[newItem].qty = qty;
     
       this.cartDatabase[newItem].price = price;
      this.cartDatabase[newItem].total = Number(total.toFixed(2));   
   
+
+  itemNode.innerHTML = '<div class="description">' + product + '</div>' + '\n' +
+      '<div class="input">' + '\n' +
+        '<input type="number" min="0" max="10" value="' + qty +  '"' +' class="qty" onchange="cartSystem.updateBySelect(this)">' + '\n' +
+      '</div>' + '\n' +
+      '<div><button class="btn-apply" onclick="cartSystem.removeButton(this)"><i class="fa fa-times" aria-hidden="true"></i></button></div>' +  '\n' +
+      '<div class="total">$' + total.toFixed(2)  + '</div>';
   
   
-  
-itemNode.innerHTML = '<td class="description">' + product + '</td>' +  
-      '<td> <input type="number" min="0" max="10" value="'+ qty + '"  class="qty" onchange="cartSystem.updateBySelect(this)"> </td>' +  '\n' +
-      '<td><button class="btn-apply" onclick="cartSystem.removeButton(this)">Remove</button></td>' +  '\n' +
-      '<td class="price">$' + price + '</td>'  + '<td class="total">$' + total.toFixed(2)  + '</td>' + '\n' ;
-  
+
   
  this.cartBody.appendChild(itemNode);
   
+
+  
+this.updateTotal(itemId);
   
   
- 
-this.updateTotal();
-  
- 
+
 }
   
  
@@ -277,7 +269,7 @@ cartSystem.activePromo = function(){
   
  var itemPromo = document.querySelector("#item1 .total"); 
  
-
+//var promoOutput = document.getElementById("promoDisplay");
  var appleQty = 0;
   
   this.updateTotal();
@@ -301,9 +293,9 @@ cartSystem.activePromo = function(){
         this.total = this.total -(this.total * 0.05);
        document.getElementById("grand-total").innerHTML = "$" + this.total.toFixed(2);
    
-  //console.log(promoOutput.innerHTML);     
+    
 document.getElementById("promoDisplay").innerHTML = '5% off promo code used';       
-        //console.log(itemPromo.innerHTML);
+        
        
      }else if(this.promoCode[1] === promoEntered && !codeUsed && this.itemNum >= 4){
        
@@ -313,7 +305,7 @@ document.getElementById("promoDisplay").innerHTML = '5% off promo code used';
        itemPromo.innerHTML = "$" + this.cartDatabase.item1.total.toFixed(2);
        document.getElementById("promoDisplay").innerHTML = '10% off promo code used';
        this.updateTotal();
-       //document.getElementById("grand-total").innerHTML = "$" + this.total.toFixed(2);
+       
        
      }else if(this.promoCode[2] === promoEntered && !codeUsed && appleQty >= 2){
        
@@ -342,7 +334,11 @@ document.getElementById("promoDisplay").innerHTML = '5% off promo code used';
     
 }; 
 
+   
 window.cartSystem = cartSystem;
 
 
 })(window);
+
+
+

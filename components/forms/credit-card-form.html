@@ -1,98 +1,74 @@
 ﻿<!DOCTYPE html>
-
 <html>
 
-  <head>
+<head>
     <title>Credit Card Form</title>
     <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/style.css" type="text/css">
-    <link rel="stylesheet" href="../../css/form.css" type="text/css">
-  </head>
+    <link rel="stylesheet" href="../../css/cc-form.css" type="text/css">
+</head>
 
-  <body>
-
-<div class="header">
-        <nav>
-<ul>
-    <li><a href="../../index.html">Home</a></li>
-     <li><a href="../buttons/buttons.html">Buttons</a></li>
-    <li><a href="../sidebar/sidebar.html">Profile Sidebar</a></li>
-   <li class="dropdown">Form
-        <ul >
-            <li><a href="signup-form.html">Sign Up</a></li>
-            <li><a href="search-form.html">Search</a></li>
-            <li><a href="questionnaire.html">Questionnaire</a></li>
-            <li><a href="signin-form.html">Login</a></li>
-            <li><a href="color-building-form.html">Color Builder</a></li>
-            <li><a href="../forms/shipping-billing-form.html">Shipping/Billing</a></li>
-            <li><a href="scheduling-form.html">Scheduling</a></li>
-            <li><a href="credit-card-form.html">Credit/Debit</a></li>
-        </ul>
-    </li>  
-    <li><a href="../calculator/calculator.html">Calculator</a></li>
-    <li><a href="../product-listing/product-listing.html">Product Listing</a></li>
-</ul>
-</nav>
-</div>
-
-   <section id="credit-card">
-<h1>Credit Card Form</h1>
-
-<form>
-<label for="name">Name on Card (first and last name)</label> <input class="input-adjust" type=“text” name="name" id="name">
-<label for="number">Card Number (include hyphens)</label> <input class="input-adjust" type=“text” maxlength="19" name="number" id="number">
-<label for="csv">Security Code (CSV)</label> <input class="input-adjust" type="text" maxlength="3" name="csv" id="csv">
-
-<p class="csv-info">For your protection, we ask that you enter an extra 3 digit number called the CSV. </p>
-<p class="csv-info">The CSV is NOT your PIN number. It is an extra ID printed on your Visa, MasterCard, 
-Discover, or American Express Card. </p>
-
-<label for="exp-date">Expiration Date:
-</label>
-<select id="exp-date">
-<option>Jan</option>
-<option>Feb</option>
-<option>Mar</option>
-<option>Apr</option>
-<option>May</option>
-<option>Jun</option>
-<option>Jul</option>
-<option>Aug</option>
-<option>Sep</option>
-<option>Oct</option>
-<option>Nov</option>
-<option>Dec</option>
-</select>
-<select>
-<option>16</option>
-<option>17</option>
-<option>18</option>
-<option>19</option>
-<option>20</option>
-<option>21</option>
-<option>22</option>
-<option>23</option>
-<option>24</option>
-<option>25</option>
-<option>26</option>
-<option>27</option>
-<option>28</option>
-<option>29</option>
-<option>30</option>
-<option>31</option>
-</select>
-
-<input class="input-adjust" type="submit" value="Submit">
-</form>
-
-</section>
-
-
+<body>
+    <div id="home"><a href="../project-1/home.html">Home</a></div>
+    <section id="credit-card">
+        <h1>Credit Card Form</h1>
+        <form id="cc-form">
+            <label for="name">Name on Card (first and last name)</label>
+            <input class="input-adjust" type="text" name="name" id="name">
+            <label for="number">Card Number (include hyphens)</label>
+            <input class="input-adjust" type="text" maxlength="19" name="number" id="number">
+            <div class="input-box">
+                <label for="csv">Security Code (CSV)</label>
+                <input class="input-adjust" type="text" maxlength="3" name="csv" id="csv">
+                <label id="info-box">
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                </label>
+                <div class="infobox-wrap">
+                    <p class="csv-info">For your protection, we ask that you enter an extra 3 digit number called the CSV. </p>
+                    <p class="csv-info">The CSV is NOT your PIN number. It is an extra ID printed on your Visa, MasterCard, Discover, or American Express Card. </p>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Expiration Date:
+                </label>
+                <select class="exp-date">
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select class="exp-date">
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </div>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </section>
     <script src="../../js/formValidate.js"></script>
-
-  </body>
+</body>
 
 </html>
-
-
-

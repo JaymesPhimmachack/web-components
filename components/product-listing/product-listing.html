@@ -1,253 +1,236 @@
 <html>
 
-  <head>
+<head>
     <title>Product Listing Page</title>
     <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="../../css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/product-list.css" type="text/css">
-  </head>
+</head>
 
-  <body>
-
-<div class="header">
-    <nav>
-<ul>
-    <li><a href="../../index.html">Home</a></li>
-     <li><a href="../buttons/buttons.html">Buttons</a></li>
-    <li><a href="../sidebar/sidebar.html">Profile Sidebar</a></li>
-   <li class="dropdown">Form
-        <ul >
-            <li><a href="../forms/signup-form.html">Sign Up</a></li>
-            <li><a href="../forms/search-form.html">Search</a></li>
-            <li><a href="../forms/questionnaire.html">Questionnaire</a></li>
-            <li><a href="../forms/signin-form.html">Login</a></li>
-            <li><a href="../forms/color-building-form.html">Color Builder</a></li>
-            <li><a href="../forms/shipping-billing-form.html">Shipping/Billing</a></li>
-            <li><a href="../forms/scheduling-form.html">Scheduling</a></li>
-            <li><a href="../forms/credit-card-form.html">Credit/Debit</a></li>
-        </ul>
-    </li>  
-    <li><a href="../calculator/calculator.html">Calculator</a></li>
-    <li><a href="product-listing.html">Product Listing</a></li>
-</ul>
-</nav>
-</div>
-
-    <div class="shop">
-
-      <div>
-
-        <div class="product">
-          <img src="http://placehold.it/350x150">
-          <h4>Microsoft - Surface Pro 4 - 12.3-inch - 128GB - Intel Core m3 - Silver<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$899.99</div>
-        <input type="number" min="1" max="10" value="1"  class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div> <!-- product  -->
-
-<div class="product" id="itemNum2">
-      <img src="http://placehold.it/350x150">
-      <h4>Apple - 9.7-inch iPad Pro with WiFi - 128GB - Silver<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$749.99</div>
-        <input type="number" min="1" max="10" value="1"  class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div> <!-- product -->
-    
- <div class="product" id="itemNum3">
-      <img src="http://placehold.it/350x150">
-      <h4>Apple - iPad Air 2 Wi-Fi + Cellular 128GB - Gold<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$619.99</div>
-        <input type="number" min="1" max="10" value="1"  class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div> <!-- product  -->   
-    
-    <div class="product" id="itemNum4">
-      <img src="http://placehold.it/350x150">
-      <h4>Apple - iPad Air 2 Wi-Fi + Cellular 128GB - Gold<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$619.99</div>
-        <input type="number" min="1" max="10" value="1"  class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div> <!-- product-->
-        
-  <div class="product" id="itemNum5">
-      <img src="http://placehold.it/350x150">
-      <h4>Apple - 9.7-inch iPad Pro with Wi-Fi + Cellular - 128GB - Space Gray<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$879.99</div>
-        <input type="number" min="1" max="10" value="1"  class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div> <!-- product -->
-    
-    <div class="product" id="itemNum6">
-      <img src="http://placehold.it/350x150">
-      <h4>Samsung - Galaxy View - 18.4-inch - 32GB - Black<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$549.99</div>
-        <input type="number" min="1" max="10" value="1" class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div>   <!-- product --> 
-
-    <div class="product" id="itemNum7">
-      <img src="http://placehold.it/350x150">
-      <h4>Microsoft - Surface 3 - 10.8-inch - Intel Atom - 128GB - Silver<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$599.99</div>
-        <input type="number" min="1" max="10" value="1" class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div>   <!-- product --> 
-
-    <div class="product" id="itemNum8">
-      <img src="http://placehold.it/350x150">
-      <h4>Apple - iPad mini 4 Wi-Fi 64GB - Silver<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price"> $499.99</div>
-        <input type="number" min="1" max="10" value="1" class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div>   <!-- product --> 
-
-    <div class="product" id="itemNum9">
-      <img src="http://placehold.it/350x150">
-      <h4>Apple - 9.7-inch iPad Pro with WiFi - 128GB - Rose Gold<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$749.99</div>
-        <input type="number" min="1" max="10" value="1" class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div>   <!-- product --> 
-
-    <div class="product" id="itemNum10">
-      <img src="http://placehold.it/350x150">
-      <h4>Microsoft - Surface Pro 4 - 12.3-inch - 128GB - Intel Core i5 - Silver<h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. Quisque vestibulum auctor lacus porttitor volutpat. Maecenas tortor neque, consectetur a vulputate et, condimentum sit amet justo.</p>
-        <div class="price">$999.99</div>
-        <input type="number" min="1" max="10" value="1" class="qty">
-        <button class="button" onclick="cartSystem.addItem(this)">Add to Cart</button>
-    </div>   <!-- product --> 
-   
-  
-</div> <!-- product list -->
-
-
-<div class="cart">
- <table>
-    <caption>Shopping Cart</caption>
-   
-    <thead class="cart-title">
-     
-       <tr>
-      <td class="description">Description</td>
-      <td>Quantity</td>
-      <td>Remove</td>
-      <td>Price</td>
-      <td>Total</td> 
-      </tr>
-    
-
-</thead> <!-- cart title -->
-
- 
-<tbody id="table_body">
-
-
-    <tr class="cart-detail" id="item1">
-      
-      <td class="description" >Microsoft - Surface Pro 4 - 12.3-inch - 128GB - Intel Core m3 - Silver</td>
-      <td>
-        <input type="number" min="0" max="10" value="1"  class="qty" onchange="cartSystem.updateBySelect(this)">
-      </td>
-      
-      <td><button class="btn-apply" onclick="cartSystem.removeButton(this)">Remove</button></td>
-      
-      <td class="price">$899.99</td>
-      <td class="total">$899.99</td>
-
-    </tr> <!-- cart detail -->
-
-
-
-
-     
-    <tr class="cart-detail" id="item2">
-
-      <td class="description">Apple - 9.7-inch iPad Pro with WiFi - 128GB - Silver</td>
-      <td>
-        <input type="number" min="0" max="10" value="1"  class="qty" onchange="cartSystem.updateBySelect(this)">
-      </td>
-      <td><button class="btn-apply" onclick="cartSystem.removeButton(this)">Remove</button></td>
-      <td class="price">$749.99</td>
-      <td class="total">$749.99</td>
-   
-    </tr>  <!-- cart detail -->
-
-  
-
-    <tr class="cart-detail" id="item3">
-
-      <td class="description ">Samsung - Galaxy View - 18.4-inch - 32GB - Black</td>
-      <td>
-      <input type="number" min="0" max="10" value="1"  class="qty" onchange="cartSystem.updateBySelect(this)">
-      </td>
-      <td><button class="btn-apply" onclick="cartSystem.removeButton(this)">Remove</button></td>
-      <td class="price">$549.99</td>
-      <td class="total">$549.99</td>
-     
-
-
-       <tr class="cart-detail" id="item4">
-
-      <td class="description">Apple - 9.7-inch iPad Pro with WiFi - 128GB - Rose Gold</td>
-      <td>
-       <input type="number" min="0" max="10" value="1"  class="qty" onchange="cartSystem.updateBySelect(this)">
-      </td>
-      <td><button class="btn-apply" onclick="cartSystem.removeButton(this)">Remove</button></td>
-      <td class="price">$749.99</td>
-      <td class="total">$749.99</td>
-  
-     </tr>  <!-- cart detail -->  
-
-      
-  </tbody>  
-   
-
-  <tfoot>
-      <tr >
-         <td></td>
-         <td></td>
-         <td></td>
-        <td class="more-title">Shipping & Handling</td>
-         <td class="more-title">Grand Total</td>
-      </tr> <!-- grand total -->
-       <tr class="grand-total">
-         <td></td>
-         <td></td>
-         <td></td>
-        <td id="ship-cost">$139.94</td>
-         <td id="grand-total">$3089.90</td>
-      </tr> <!-- grand total -->
-    <tr class="promo">
-      <td id="promoDisplay"> 5% off total order, 10% off 4 or more item and 15% off two or more Apple product</td>
-     <td>Enter Promo Code:</td>
-    <td><input type="text" class="promo-input"></td>
-    <td><button class="btn-apply" onclick="cartSystem.activePromo()">Apply</button></td>
-    </tr> <!-- promo -->
-
-     <tr class="promo">
-     <td></td>  
-    <td><button class="btn-apply">Proceed to Checkout</button></td>
-    <td><button class="btn-apply keep-shopping" >Continue Shopping</button></td>   
-    </tr> <!-- promo -->   
-  </tfoot>
-    </table>
-</div>  <!-- cart -->
-
-
-</div> <!-- shop -->
-    
-<script src="../../js/product.js"></script>
-
+<body>
+    <div id="home"><a href="../project-1/home.html">Home</a></div>
+    <div class="container">
+        <div class="shop">
+            <div class="product">
+                <div class="item" id="itemNum1">
+                    <div class="image1 img-style"></div>
+                    <h4>Microsoft - Surface Pro 4 - 12.3-inch - 128GB - Intel Core m3 - Silver</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>899.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product  -->
+                <div class="item" id="itemNum2">
+                    <div class="image2 img-style"></div>
+                    <h4>Apple - 9.7-inch iPad Pro with WiFi - 128GB - Silver</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>749.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product -->
+                <div class="item" id="itemNum3">
+                    <div class="image3 img-style"></div>
+                    <h4>Apple - iPad Air 2 Wi-Fi + Cellular 128GB - Gold</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>619.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product  -->
+                <div class="item" id="itemNum4">
+                    <div class="image1 img-style"></div>
+                    <h4>Apple - iPad Air 2 Wi-Fi + Cellular 128GB - Gold</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>619.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product-->
+                <div class="item" id="itemNum5">
+                    <div class="image2 img-style"></div>
+                    <h4>Apple - 9.7-inch iPad Pro with Wi-Fi + Cellular - 128GB - Space Gray</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>879.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product -->
+                <div class="item" id="itemNum6">
+                    <div class="image3 img-style"></div>
+                    <h4>Samsung - Galaxy View - 18.4-inch - 32GB - Black</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>549.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product -->
+                <div class="item" id="itemNum7">
+                    <div class="image1 img-style"></div>
+                    <h4>Microsoft - Surface 3 - 10.8-inch - Intel Atom - 128GB - Silver</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>599.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product -->
+                <div class="item" id="itemNum8">
+                    <div class="image2 img-style"></div>
+                    <h4>Apple - iPad mini 4 Wi-Fi 64GB - Silver</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>499.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product -->
+                <div class="item" id="itemNum9">
+                    <div class="image3 img-style"></div>
+                    <h4>Apple - 9.7-inch iPad Pro with WiFi - 128GB - Rose Gold</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>749.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product -->
+                <div class="item" id="itemNum10">
+                    <div class="image1 img-style"></div>
+                    <h4>Microsoft - Surface Pro 4 - 12.3-inch - 128GB - Intel Core i5 - Silver</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin tortor elementum volutpat dignissim. Nunc quis vehicula tellus. Praesent malesuada dictum est quis luctus. Pellentesque lacus metus, pellentesque vel odio eget, vulputate dignissim felis. Etiam a ipsum a justo lacinia scelerisque. </p>
+                    <div class="price"><span>$</span><span>999.99</span></div>
+                    <label>Qty: </label>
+                    <input type="number" min="1" max="10" value="1" class="qty">
+                    <br>
+                    <br>
+                    <button class="button" onclick="cartSystem.addItem(this)">Add to Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                </div>
+                <!-- product -->
+            </div>
+            <!-- product list -->
+            <div class="cart">
+                <div class="cart-title">Shopping Cart</div>
+                <div class="cart-header">
+                    <div>Description</div>
+                    <div>Quantity</div>
+                    <div>Remove</div>
+                    <div>Total</div>
+                </div>
+                <!-- cart title -->
+                <div class="cart-body">
+                    <div class="cart-detail" id="item1">
+                        <div class="description">Microsoft - Surface Pro 4 - 12.3-inch - 128GB - Intel Core m3 - Silver</div>
+                        <div class="input">
+                            <input type="number" min="0" max="10" value="1" class="qty" onchange="cartSystem.updateBySelect(this)">
+                        </div>
+                        <div>
+                            <button class="btn-apply" onclick="cartSystem.removeButton(this)"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="total">$899.99</div>
+                    </div>
+                    <!-- cart detail -->
+                    <div class="cart-detail" id="item2">
+                        <div class="description">Apple - 9.7-inch iPad Pro with WiFi - 128GB - Silver</div>
+                        <div class="input">
+                            <input type="number" min="0" max="10" value="1" class="qty" onchange="cartSystem.updateBySelect(this)">
+                        </div>
+                        <div>
+                            <button class="btn-apply" onclick="cartSystem.removeButton(this)"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="total">$749.99</div>
+                    </div>
+                    <!-- cart detail -->
+                    <div class="cart-detail" id="item3">
+                        <div class="description ">Samsung - Galaxy View - 18.4-inch - 32GB - Black</div>
+                        <div class="input">
+                            <input type="number" min="0" max="10" value="1" class="qty" onchange="cartSystem.updateBySelect(this)">
+                        </div>
+                        <div>
+                            <button class="btn-apply" onclick="cartSystem.removeButton(this)"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="total">$549.99</div>
+                    </div>
+                    <!-- cart detail -->
+                    <div class="cart-detail" id="item4">
+                        <div class="description">Apple - 9.7-inch iPad Pro with WiFi - 128GB - Rose Gold</div>
+                        <div class="input">
+                            <input type="number" min="0" max="10" value="1" class="qty" onchange="cartSystem.updateBySelect(this)">
+                        </div>
+                        <div>
+                            <button class="btn-apply" onclick="cartSystem.removeButton(this)"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="total">$749.99</div>
+                    </div>
+                    <!-- cart detail -->
+                </div>
+                <!-- cart body -->
+                <div class="cart-footer">
+                    <div class="promo">
+                        <div class="promo-title">Enter Promo Code:</div>
+                        <div>
+                            <input type="text" class="promo-input">
+                        </div>
+                        <div>
+                            <button class="btn-apply" onclick="cartSystem.activePromo()">Apply</button>
+                        </div>
+                    </div>
+                    <!-- promo -->
+                    <div class="product-cost">
+                        <div class="subtotal-cost">
+                            <div class="more-title">Subtotal:</div>
+                            <div id="subtotal">$2949.96</div>
+                        </div>
+                        <!-- subtotal cost -->
+                        <div class="ship-cost">
+                            <div class="more-title">Shipping:</div>
+                            <div id="ship-cost">$139.94</div>
+                        </div>
+                        <!-- ship cost -->
+                        <div class="total">
+                            <div class="more-title">Total:</div>
+                            <div id="grand-total">$3089.90</div>
+                        </div>
+                        <!-- total cost -->
+                        <div class="order-btn">
+                            <button class="btn-apply">Place Order</button>
+                        </div>
+                        <!-- place order -->
+                    </div>
+                    <!-- product cost -->
+                </div>
+                <!-- cart footer -->
+            </div>
+            <!-- cart -->
+        </div>
+        <!-- shop -->
+    </div>
+    <script src="../../js/product.js"></script>
 </body>
 
 </html>
